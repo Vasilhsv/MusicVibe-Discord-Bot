@@ -60,7 +60,7 @@ async def play(ctx, *, search):
             voice_client = ctx.voice_client
             if voice_client.is_playing():
                 voice_client.stop()
-            voice_client.play(discord.FFmpegPCMAudio(executable="ffmpeg.exe", source=url, **FFMPEG_OPTIONS))
+            voice_client.play(discord.FFmpegPCMAudio(source=url, **FFMPEG_OPTIONS))
             await ctx.send(f'🎶 Now Playing: **{title}**')   
         except Exception as e:
             await ctx.send("❌ An error occurred. Try another song.")
@@ -86,4 +86,16 @@ async def stop(ctx):
         await ctx.send("⏹️ Music stopped.")
     else:
         await ctx.send("❌ I am not playing anything.")
+from flask import Flask
+from threading import Thread
+app = Flask('')
+@app.route('/')
+def home():
+    return "I'm alive"
+def run():
+    app.run(host='0.0.0.0', port=8080)
+def keep_alive():
+    t = Thread(target=run)
+    t.start()
+keep_alive()
 bot.run(os.getenv('DISCORD_TOKEN'))
