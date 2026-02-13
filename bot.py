@@ -72,7 +72,8 @@ async def play(ctx, *, search):
             voice_client = ctx.voice_client
             if voice_client.is_playing():
                 voice_client.stop()
-            ctx.voice_client.play(discord.FFmpegPCMAudio(executable="./ffmpeg", source=url, **FFMPEG_OPTIONS))
+            ffmpeg_executable = os.path.join(os.getcwd(), 'ffmpeg')
+            ctx.voice_client.play(discord.FFmpegPCMAudio(executable=ffmpeg_executable, source=url, **FFMPEG_OPTIONS))
             await ctx.send(f'🎶 Now Playing: **{title}**')   
         except Exception as e:
             await ctx.send("❌ An error occurred. Try another song.")
