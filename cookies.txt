@@ -1,3 +1,4 @@
+# Netscape HTTP Cookie File
 [
 {
     "domain": ".youtube.com",
