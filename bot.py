@@ -32,7 +32,9 @@ YDL_OPTIONS = {
     'default_search': 'ytsearch',
     'source_address': '0.0.0.0',
     'socket_timeout': 10,
-    'cookiefile': 'cookies.txt'
+    'cookiefile': 'cookies.txt',
+    'extract_flat': False,
+    'force_generic_extractor': False
 }
 FFMPEG_OPTIONS = {
     'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5', 
