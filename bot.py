@@ -3,8 +3,20 @@ from discord.ext import commands
 import yt_dlp
 import asyncio
 import os
-import dotenv import load_dotenv
+from dotenv import load_dotenv
+from flask import Flask
+from threading import Thread
 load_dotenv()
+app = Flask('')
+@app.route('/')
+def home():
+    return "MusicVibe is alive!"
+def run_web():
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host='0.0.0.0', port=port)
+def keep_alive():
+    t = Thread(target=run_web)
+    t.start()
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
