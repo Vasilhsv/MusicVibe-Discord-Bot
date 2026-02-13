@@ -25,14 +25,13 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 YDL_OPTIONS = {
     'format': 'bestaudio/best',
-    'noplaylist': 'True',
+    'noplaylist': True,
     'nocheckcertificate': True,
-    'ignoreerrors': False,
-    'logtostderr': False,
     'quiet': True,
     'no_warnings': True,
-    'default_search': 'auto',
-    'source_address': '0.0.0.0'
+    'default_search': 'ytsearch',
+    'source_address': '0.0.0.0',
+    'socket_timeout': 10
 }
 FFMPEG_OPTIONS = {
     'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5', 
