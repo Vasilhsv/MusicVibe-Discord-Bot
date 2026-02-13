@@ -1,3 +1,5 @@
+# (c) 2024 Vasilhs Vartholomaios. All Rights Reserved.
+# Unauthorized copying and modification is strictly prohibited.
 import discord
 from discord.ext import commands
 import yt_dlp
