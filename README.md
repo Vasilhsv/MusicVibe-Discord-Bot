@@ -9,7 +9,7 @@ Take your voice channels to a whole new level with MusicVibe, your ultimate soci
 * **High-Fidelity Audio**: Savor the best audio experience, perfect for your Discord voice channels.
 * **Intuitive Controls**: Simple and easy to remember commands for a hassle-free experience.
 
-## Command List
+## Command List 
 
 To make MusicVibe easy to use, our commands are based on a classic prefix system. Here are our commands to get you started:
 
