@@ -11,7 +11,7 @@
 
   <br />
 
-  `## [👉 Click Here to Invite MusicVibe 👈](BALE_EDW_TO_INVITE_LINK_SOU)`
+  ## 👉 Click Here to Invite MusicVibe 👈
 
 </div>
 
