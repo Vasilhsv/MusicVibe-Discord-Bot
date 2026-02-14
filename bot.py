@@ -39,6 +39,25 @@ async def on_ready():
         print(f"Failed to sync commands: {e}")
     print(f'--------------------------------')
 @bot.tree.command(name="join", description="Join your voice channel")
+@bot.event
+async def on_guild_join(guild):
+    owner = guild.owner
+    welcome_msg = (
+        f"👋 **Hi {owner.name}! Thanks for inviting MusicVibe to `{guild.name}`!**\n\n"
+        "I'm here to bring the best music to your voice channels. 🎶\n"
+        "To get started, simply type `/join` in a voice channel and then `/play` your favorite song.\n\n"
+        "🔗 **Useful Links:**\n"
+        "• [Terms of Service](https://github.com/Vasilhsv/MusicVibe-Discord-Bot/blob/main/TOS.md)\n"
+        "• [Privacy Policy](https://github.com/Vasilhsv/MusicVibe-Discord-Bot/blob/main/PRIVACY.md)\n"
+        "• [Support Server](https://discord.com/channels/1472248087354540237/1472260062419620106)\n\n"
+        "Enjoy the music! 🎧"
+    )
+
+    try:
+        await owner.send(welcome_msg)
+        print(f"Sent welcome DM to the owner of {guild.name}.")
+    except Exception as e:
+        print(f"Could not send DM to {owner.name}: {e}")
 async def join(interaction: discord.Interaction):
     if interaction.user.voice:
         channel = interaction.user.voice.channel
