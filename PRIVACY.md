@@ -12,5 +12,5 @@ Our bot interacts with **YouTube** and **SoundCloud** APIs to stream audio. No u
 ### 4. Infrastructure & Security
 The bot is hosted on a **private, dedicated server**. 
 * No data is shared with third-party cloud hosting providers.
-* All session memory is cleared automatically upon bot restart.
+* All session memory is cleared automatically upon bot restart. 
 * We prioritize the security and privacy of the servers where MusicVibe is present.
