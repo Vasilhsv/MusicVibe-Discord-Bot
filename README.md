@@ -11,7 +11,7 @@
 
   <br />
 
-  ## 👉 ➕ [Add MusicVibe to your Discord Server](https://discord.com/oauth2/authorize?client_id=1471780817658318848&permissions=3165184&integration_type=0&scope=bot+applications.commands) 👈
+  ## 👉 [Add MusicVibe to your Discord Server](https://discord.com/oauth2/authorize?client_id=1471780817658318848&permissions=3165184&integration_type=0&scope=bot+applications.commands) 👈
 
 </div>
 
