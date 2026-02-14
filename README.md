@@ -13,11 +13,11 @@ Take your voice channels to a whole new level with MusicVibe, your ultimate soci
 
 To make MusicVibe easy to use, our commands are based on a classic prefix system. Here are our commands to get you started:
 
-* **!join**: Invite MusicVibe to join your voice channel.
-* **!play [song name]**: Play your favorite tune.
-* **!pause / !stop**: Pause or stop the music when you need a break.
-* **!resume**: Resume playing from where you left off. 
-* **!leave**: Disconnect MusicVibe safely from your voice call.
+* **/join**: Invite MusicVibe to join your voice channel.
+* **/play [song name]**: Play your favorite tune.
+* **/pause / /stop**: Pause or stop the music when you need a break.
+* **/resume**: Resume playing from where you left off. 
+* **/leave**: Disconnect MusicVibe safely from your voice call.
 
 ## Why MusicVibe?
 
