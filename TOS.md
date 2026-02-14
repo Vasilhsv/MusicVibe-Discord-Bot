@@ -17,5 +17,5 @@ MusicVibe is provided "as is" via a **private dedicated server**.
 ### 5. Termination of Access
 We reserve the right to restrict or block access to the bot for servers that:
 * Violate these terms.
-* Spam commands to disrupt the service.
+* Spam commands to disrupt the service. 
 * Attempt to bypass bot limitations.
