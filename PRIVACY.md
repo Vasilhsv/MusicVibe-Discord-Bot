@@ -4,7 +4,7 @@
 MusicVibe does **not** collect, log, or store any personal user information, chat messages, or voice recordings. 
 
 ### 2. Real-time Processing
-We only process commands (e.g., `!play`, `!join`) in real-time to provide the requested music services. No data is cached or saved after the command is executed.
+We only process commands (e.g., `/play`, `/join`) in real-time to provide the requested music services. No data is cached or saved after the command is executed.
 
 ### 3. Third-Party Services
 Our bot interacts with **YouTube** and **SoundCloud** APIs to stream audio. No user-identifiable data is shared with these third parties during the streaming process.
