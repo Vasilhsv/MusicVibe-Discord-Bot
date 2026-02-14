@@ -7,20 +7,8 @@ import yt_dlp
 import asyncio
 import os
 from dotenv import load_dotenv
-from flask import Flask
-from threading import Thread
 import traceback
 load_dotenv()
-app = Flask('')
-@app.route('/')
-def home():
-    return "MusicVibe is alive!"
-def run_web():
-    port = int(os.environ.get("PORT", 8080))
-    app.run(host='0.0.0.0', port=port)
-def keep_alive():
-    t = Thread(target=run_web)
-    t.start()
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
@@ -33,7 +21,6 @@ YDL_OPTIONS = {
     'default_search': 'ytsearch',
     'source_address': '0.0.0.0',
     'socket_timeout': 10,
-    'cookiefile': 'cookies.txt',
     'extract_flat': False,
     'force_generic_extractor': False
 }
@@ -85,7 +72,6 @@ async def play(interaction: discord.Interaction, search: str):
             voice_client = interaction.guild.voice_client
             if voice_client.is_playing():
                 voice_client.stop()
-            ffmpeg_executable = os.path.join(os.getcwd(), 'ffmpeg') 
             voice_client.play(discord.FFmpegPCMAudio(executable='ffmpeg', source=url, **FFMPEG_OPTIONS))
             await interaction.followup.send(f'🎶 Now Playing: **{title}**')   
         except Exception as e:
@@ -116,5 +102,4 @@ async def stop(interaction: discord.Interaction):
     else:
         await interaction.response.send_message("❌ I am not playing anything.", ephemeral=True)
 if __name__ == "__main__":
-    keep_alive() 
     bot.run(os.getenv('DISCORD_TOKEN'))
