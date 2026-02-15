@@ -48,6 +48,8 @@ MusicVibe uses modern **Slash Commands** for a seamless experience.
 | `/leave` | 👋 Disconnect MusicVibe safely from the call. |
 
 ## 🛠️ Support & Information
+| Command | Description |
+| :--- | :--- |
 |  `/commands`| 📖 Opens the interactive command guide and help menu.
 |  `/invite`| ✉️ Generates an official invite link to add MusicVibe to your own servers.
 
