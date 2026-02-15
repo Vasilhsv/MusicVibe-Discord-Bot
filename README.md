@@ -39,10 +39,17 @@ MusicVibe uses modern **Slash Commands** for a seamless experience.
 | :--- | :--- |
 | `/join` | 🟢 Invite MusicVibe to join your voice channel. |
 | `/play [song]` | ▶️ Play your favorite tune from YouTube. |
+| `/nowplaying`| 📝 Shows detailed information (Title, Duration, Thumbnail) of the song currently playing.
+| `/next`| ⏭️ Skips the current song and starts playing the next one in the queue.
+| `/queue`| 📋 Displays the list of upcoming songs waiting to be played.
 | `/pause` | ⏸️ Pause the music when you need a break. |
 | `/resume` | ⏯️ Resume playing from where you left off. |
 | `/stop` | ⏹️ Stop the music completely. |
 | `/leave` | 👋 Disconnect MusicVibe safely from the call. |
+
+## 🛠️ Support & Information
+|  `/commands`| 📖 Opens the interactive command guide and help menu.
+|  `/invite`| ✉️ Generates an official invite link to add MusicVibe to your own servers.
 
 ## 📜 Legal & Privacy
 
