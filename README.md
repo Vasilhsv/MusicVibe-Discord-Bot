@@ -23,6 +23,7 @@ Join our discord server to test the bot and chat with the community!
 [![Discord Server](https://img.shields.io/discord/1472248087354540237?label=MusicVibe%20Server&logo=discord&style=for-the-badge&color=7289DA)](https://discord.gg/s4DDAPv435)
 
 > **Note:** The status badge shows the number of online members in our official server.
+<iframe src="https://discord.com/widget?id=1472248087354540237&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 ## 🎵 About MusicVibe
 Take your voice channels to a whole new level with **MusicVibe**. Designed for perfect synchronization, it allows you and your friends to enjoy your favorite music together in real-time. 
