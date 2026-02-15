@@ -244,5 +244,15 @@ async def stop(interaction: discord.Interaction):
         await interaction.response.send_message("⏹️ Music stopped.")
     else:
         await interaction.response.send_message("❌ I am not playing anything.", ephemeral=True)
+app = Flask('')
+@app.route('/')
+def home():
+    return "I am alive!"
+def run():
+    app.run(host='0.0.0.0', port=8080)
+def keep_alive():
+    t = Thread(target=run)
+    t.start()
+keep_alive()
 if __name__ == "__main__":
     bot.run(os.getenv('DISCORD_TOKEN'))
