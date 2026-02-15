@@ -7,7 +7,7 @@
 
   [![Discord](https://img.shields.io/badge/Discord-Bot-7289da?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com)
   [![Python](https://img.shields.io/badge/Made%20with-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-  [![Status](https://img.shields.io/badge/Status-Online-success?style=for-the-badge)]()
+  [![Status](https://img.shields.io/discord/1472248087354540237?label=MusicVibe&logo=discord&style=for-the-badge)]()
 
   <br />
 
