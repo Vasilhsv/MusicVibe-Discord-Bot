@@ -15,7 +15,7 @@ The bot owner is **not** responsible for the content streamed through third-part
 MusicVibe is provided "as is" via a **private dedicated server**. 
 * Service may be interrupted due to local maintenance, ISP issues, or API changes.
 * We do not guarantee 100% uptime but strive for maximum stability.
-
+ 
 ### 5. Termination of Access
 We reserve the right to restrict or block access to the bot for servers that:
 * Violate these terms.
