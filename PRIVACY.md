@@ -18,7 +18,7 @@ The bot is hosted on a **private, dedicated server**.
 * No data is shared with third-party cloud hosting providers.
 * All session memory is cleared automatically upon bot restart. 
 * We prioritize the security and privacy of the servers where MusicVibe is present.
-
+ 
 ### 2. Real-time Processing
 We only process commands (e.g., `/play`, `/join`) in real-time to provide the requested music services. No data is cached or saved after the command is executed.
 
