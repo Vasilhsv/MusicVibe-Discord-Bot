@@ -1,0 +1,114 @@
+[2026-02-27 18:24:28] [INFO    ] discord.client: logging in using static token
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.92:8080
+[33mPress CTRL+C to quit[0m
+[2026-02-27 18:24:30] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 3d72ee8afdef0dc117185db29aa0d1a4).
+[2026-02-27 18:25:02] [INFO    ] discord.voice_state: Connecting to voice...
+[2026-02-27 18:25:02] [INFO    ] discord.voice_state: Starting voice handshake... (connection attempt 1)
+[2026-02-27 18:25:02] [INFO    ] discord.voice_state: Voice handshake complete. Endpoint found: c-fra12-36c45c57.discord.media:2096
+[2026-02-27 18:25:03] [INFO    ] discord.voice_state: Voice connection complete.
+[2026-02-27 18:25:23] [INFO    ] discord.voice_state: The voice handshake is being terminated for Channel ID 843117443684892673 (Guild ID 818417337303695380)
+[2026-02-27 18:25:23] [INFO    ] discord.player: ffmpeg process 213653 has not terminated. Waiting to terminate...
+[2026-02-27 18:25:23] [INFO    ] discord.player: ffmpeg process 213653 should have terminated with a return code of -9.
+  File "/home/vasilhsv/Music/Discord Bot/bot.py", line 261
+    async def on_app_command_completion(interaction: discord.Interaction, command: app_commands.Command):
+IndentationError: unexpected unindent
+  File "/home/vasilhsv/Music/Discord Bot/bot.py", line 261
+    async def on_app_command_completion(interaction: discord.Interaction, command: app_commands.Command):
+IndentationError: unexpected unindent
+  File "/home/vasilhsv/Music/Discord Bot/bot.py", line 261
+    async def on_app_command_completion(interaction: discord.Interaction, command: app_commands.Command):
+IndentationError: unexpected unindent
+  File "/home/vasilhsv/Music/Discord Bot/bot.py", line 261
+    async def on_app_command_completion(interaction: discord.Interaction, command: app_commands.Command):
+IndentationError: unexpected unindent
+  File "/home/vasilhsv/Music/Discord Bot/bot.py", line 261
+    async def on_app_command_completion(interaction: discord.Interaction, command: app_commands.Command):
+IndentationError: unexpected unindent
+  File "/home/vasilhsv/Music/Discord Bot/bot.py", line 261
+    async def on_app_command_completion(interaction: discord.Interaction, command: app_commands.Command):
+IndentationError: unexpected unindent
+  File "/home/vasilhsv/Music/Discord Bot/bot.py", line 261
+    async def on_app_command_completion(interaction: discord.Interaction, command: app_commands.Command):
+IndentationError: unexpected unindent
+  File "/home/vasilhsv/Music/Discord Bot/bot.py", line 261
+    async def on_app_command_completion(interaction: discord.Interaction, command: app_commands.Command):
+IndentationError: unexpected unindent
+  File "/home/vasilhsv/Music/Discord Bot/bot.py", line 261
+    async def on_app_command_completion(interaction: discord.Interaction, command: app_commands.Command):
+IndentationError: unexpected unindent
+  File "/home/vasilhsv/Music/Discord Bot/bot.py", line 261
+    async def on_app_command_completion(interaction: discord.Interaction, command: app_commands.Command):
+IndentationError: unexpected unindent
+[2026-02-27 18:47:21] [INFO    ] discord.client: logging in using static token
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.92:8080
+[33mPress CTRL+C to quit[0m
+[2026-02-27 18:47:22] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 42f1f6a484bbeac018e8d3a123671bd7).
+[2026-02-27 18:47:58] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'commands'
+Traceback (most recent call last):
+  File "/home/vasilhsv/Music/Discord Bot/venv/lib/python3.14/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vasilhsv/Music/Discord Bot/bot.py", line 125, in commands_list
+    await interaction.response.send_message(embed=embed)
+  File "/home/vasilhsv/Music/Discord Bot/venv/lib/python3.14/site-packages/discord/interactions.py", line 1051, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/vasilhsv/Music/Discord Bot/venv/lib/python3.14/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vasilhsv/Music/Discord Bot/venv/lib/python3.14/site-packages/discord/app_commands/tree.py", line 1297, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/vasilhsv/Music/Discord Bot/venv/lib/python3.14/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vasilhsv/Music/Discord Bot/venv/lib/python3.14/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'commands' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2026-02-27 18:48:06] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'commands'
+Traceback (most recent call last):
+  File "/home/vasilhsv/Music/Discord Bot/venv/lib/python3.14/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vasilhsv/Music/Discord Bot/bot.py", line 125, in commands_list
+    await interaction.response.send_message(embed=embed)
+  File "/home/vasilhsv/Music/Discord Bot/venv/lib/python3.14/site-packages/discord/interactions.py", line 1051, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/vasilhsv/Music/Discord Bot/venv/lib/python3.14/site-packages/discord/webhook/async_.py", line 236, in request
+    raise DiscordServerError(response, data)
+discord.errors.DiscordServerError: 503 Service Unavailable (error code: 0): upstream connect error or disconnect/reset before headers. reset reason: overflow
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vasilhsv/Music/Discord Bot/venv/lib/python3.14/site-packages/discord/app_commands/tree.py", line 1297, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/vasilhsv/Music/Discord Bot/venv/lib/python3.14/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vasilhsv/Music/Discord Bot/venv/lib/python3.14/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'commands' raised an exception: DiscordServerError: 503 Service Unavailable (error code: 0): upstream connect error or disconnect/reset before headers. reset reason: overflow
+[2026-02-27 18:48:44] [INFO    ] discord.voice_state: Connecting to voice...
+[2026-02-27 18:48:44] [INFO    ] discord.voice_state: Starting voice handshake... (connection attempt 1)
+[2026-02-27 18:48:44] [INFO    ] discord.voice_state: Voice handshake complete. Endpoint found: frankfurt10135.discord.media:443
+[2026-02-27 18:48:44] [INFO    ] discord.voice_state: Voice connection complete.
+[2026-02-27 18:49:00] [INFO    ] discord.voice_state: The voice handshake is being terminated for Channel ID 843117443684892673 (Guild ID 818417337303695380)
+[2026-02-27 18:49:00] [INFO    ] discord.player: ffmpeg process 213846 has not terminated. Waiting to terminate...
+[2026-02-27 18:49:00] [INFO    ] discord.player: ffmpeg process 213846 should have terminated with a return code of -9.
